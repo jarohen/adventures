@@ -31,4 +31,3 @@
        half-lines
        random-line))
 
-(horse-shakespeare)
