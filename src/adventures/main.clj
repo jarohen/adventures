@@ -9,4 +9,4 @@
 
 (defn -main []
   (nrepl/start-server :port 7888)
-  (run-jetty #'handler {:port 3000 :join? false}))
+  (run-jetty #'handler {:port (Integer/parseInt (System/getenv "PORT")) :join? false}))
