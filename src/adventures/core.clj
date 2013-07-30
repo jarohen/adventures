@@ -24,3 +24,11 @@
   (->> (concat (rand-nth half-lines) (rand-nth half-lines))
        (s/join " ")
        .trim))
+
+(defn horse-shakespeare []
+  (->> plays
+       rand-nth
+       half-lines
+       random-line))
+
+(horse-shakespeare)

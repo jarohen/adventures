@@ -5,7 +5,7 @@
             [ring.util.response :refer [response]]))
 
 (defn handler [req]
-  (response "Hello world!"))
+  (response (core/horse-shakespeare)))
 
 (defn -main []
   (nrepl/start-server :port 7888)
